@@ -1,7 +1,11 @@
 Original App Design Project - README Template
 ===
 
-# APP_NAME_HERE
+# FEELINGSIFY
+
+Spotify API Link:
+
+https://developer.spotify.com/documentation/web-api/reference/#/
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -11,16 +15,16 @@ Original App Design Project - README Template
 
 ## Overview
 ### Description
-[Description of your app]
+An app that uses Spotify API. The characteristic of Feelingfy is that it will have different playlists that you will be able to choose depending on your mood.
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
-- **Story:**
-- **Market:**
-- **Habit:**
-- **Scope:**
+   - **Category:** Music 
+   - **Mobile:**  Similar to the spotify app we use music as we travel so mobile is an important aspect.
+   - **Story:** Choose music based on what you are feeling to truly embrace your emotions
+   - **Market:** Anyone who wants to be recommended new music and mood is important to determine what you are more likely to listen to.
+   - **Habit:** Can reset mood every time you would like to so you can use this app multiple times.
+   - **Scope:** Would be to anyone who actively enjoys listening to music.
 
 ## Product Spec
 
@@ -28,48 +32,77 @@ Original App Design Project - README Template
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* Users can create an account
+* Users can log in and log out
+* Users can remain logged in
+* Users can choose a mood
+* Users can make a playlist
+* Users can save/favorite a playlist
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* Users can upload a profile photo
+* Background colors can be in sync with songs genre/mood
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+* Login Screen
+   * User can sign up or login 
+* Choose Mood Screen
+   * User can choose a mood for a specific playlist
+* New Playlist Screen
+   * User can see playlist/song recommendations according to the mood chosen
+   * User can save/favorite playlist
+* Saved/Favorite Playlists Screen (Profile Screen)
+    * User can see previously saved/favorited playlists
+    * User can delete playlists
+* Add Song View
+    * User can add a song to a playlist by searching it
+* Play Song View
+    * User can play a song by clicking on it
+* Search Song Screen
+    * User can search for a song to listen to or add to a playlist
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Profile (Saved/Favorite Playlists) Feed
+* Mood Feed
+* Search Song 
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Login Screen
+    * Login/Sign Up Button => Profile Feed
+* Choose Mood Screen
+   * Clicking Mood Emoji => New Playlist Screen
+* New Playlist Screen
+   * Displays new playlist for user
+   * Add song button => Add Song View
+   * Click song => Play Song View
+* Saved/Favorite Playlist Screen
+   * Displays list of playlists
+   * Click on a saved playlist => Individual playlist screen
+   * Add song button => Add Song View
+* Individual Playlist Screen
+   * Displays songs within the playlist selected
+   * Add song button => Add Song View
+   * Click song => Play Song View
+* Song Playing Screen
+    * Can play/pause song
+    * Can go back or forward songs in playlist
+    * Can go back to Playlist view => Previous playlist view
+* Add Song to Playlist Screen
+    * Displays all saved playlists
+    * Click on a playlist to add song to playlist => Individual Playlist screen
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
-
 ### [BONUS] Digital Wireframes & Mockups
+![](https://i.imgur.com/IXFQjUp.png)
 
 ### [BONUS] Interactive Prototype
-
+https://www.figma.com/file/8cVC1HAlNcIjjJu2V19tzt/Wireframe?node-id=0%3A1
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
