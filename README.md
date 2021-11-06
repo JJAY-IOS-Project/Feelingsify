@@ -1,12 +1,15 @@
-Original App Design Project - README Template
+Original App Design Project - README
 ===
 
 # FEELINGSIFY
-Group Members: SangWon Park, Hannah Williams, Bryan Diaz, Caesar Cuzco
 
-Spotify API Link:
+Spotify API:
 
 https://developer.spotify.com/documentation/web-api/reference/#/
+
+Parse Documentation:
+
+https://docs.parseplatform.org/ios/guide/#updating-objects
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -19,7 +22,6 @@ https://developer.spotify.com/documentation/web-api/reference/#/
 An app that uses Spotify API. The characteristic of Feelingfy is that it will have different playlists that you will be able to choose depending on your mood.
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
    - **Category:** Music 
    - **Mobile:**  Similar to the spotify app we use music as we travel so mobile is an important aspect.
    - **Story:** Choose music based on what you are feeling to truly embrace your emotions
@@ -34,6 +36,7 @@ An app that uses Spotify API. The characteristic of Feelingfy is that it will ha
 **Required Must-have Stories**
 
 * Users can create an account
+* Users see loading screen when app is opened
 * Users can log in and log out
 * Users can remain logged in
 * Users can choose a mood
@@ -104,11 +107,131 @@ An app that uses Spotify API. The characteristic of Feelingfy is that it will ha
 
 ### [BONUS] Interactive Prototype
 https://www.figma.com/file/8cVC1HAlNcIjjJu2V19tzt/Wireframe?node-id=0%3A1
+
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+#### Post
+| Property |       Type      | Description     |
+| -------- | ----------------| ----------------|
+|favorited |Boolean          |Playlist is favorited|
+|loggedIn  |Boolean          |User is logged in or not|
+|moodId    |String           |Id of the different mood|
+|playlistId|String           |Unique ID for the new playlist|
+|playlistImage|File          |Image of Playlist|
+|playlistAuthor|String  |Playlist author  |
+|playSong  |Boolean          |Song is playing/paused|
+|songCount |Number           |Number of songs within a playlist|
+|songName  |String           |Name of Song|
+|songAuthor|String           |Singer of Song|
+|songImage |File             |Image of Song |
+|searchButton|String         |Search Network for songName/songAuthor|
+
 ### Networking
-- [Add list of network requests by screen ]
+#### Network requests
+* Login Screen
+    * (Read/GET) Query logged in user object
+    * (Create/POST) Create new user object
+
+* Bottom Menu
+    * (Read/GET) Fetch Mood Screen
+    * (Read/GET) Fetch Profile Screen
+    * (Read/GET) Fetch Search Screen
+
+* Choose Mood Screen
+    * (Read/GET) Query playlist category object
+
+
+* New Playlist Screen
+    * (Read/GET) Fetch user's favorite playlists
+    * (Update/PUT) Update Favorite status
+
+
+* Saved/Favorite Playlist Screen
+    * (Update/PUT) Updated user playlist
+    * (Create/POST) Create new playlist
+
+
+* Individual Playlist Screen
+    * (Read/GET) Fetch user's favorite playlists
+    * (Read/GET) Fetch playlist 
+
+
+* Song Playing Screen
+    * (Read/GET) Fetch current song in playlist
+    * (Read/GET) Fetch current song photo
+    * (Update/POST) Change to next/previous song
+    * (Update/POST) Play/stop song
+
+
+* Add Song to Playlist Screen
+    * (Update/PUT) Search updated request to network
+    * (Create/POST) Add requested song to playlist
+
+
+
+
+
 - [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+    ```
+    // Saving Objects in Mood Screen
+    let moodCategories = PFObject (ClassName:"Categories")
+    moodCategories["partyMood"] = Playlist1
+    moodCategories["sadMood"] = Playlist2
+    moodCategories["everyMood"] = Playlist3
+    moodCategories["emotionalMood"] = Playlist4
+    moodCategories["angryMood"] = Playlist5
+    moodCategories["happyMood"] = Playlist6
+    moodCategories["upMood"] = Playlist7
+    moodCategories["loveMood"] = Playlist8
+    
+    moodCategories.saveInBackground { (succeed, error ) in 
+        if (succeeded) {
+        //Objects have been saved
+        } else {
+            //There was a problem saving to Parse
+            print(error.description)
+        }
+    }
+    ```
+    
+    
+    ```
+    // Saving songs to Playlists
+    let newPlaylist = PFObject (Classname:"Newplaylist")
+    newPlaylist["newSong"] = songName
+    newPlaylist["playlist"] = playlistId
+ 
+    (https://docs.parseplatform.org/ios/guide/#queries)
+    
+    // Retrieving Data to user
+    
+    let query = PFQuery(className:"moodCategories")
+    query.whereKey("playerName", equalTo:"")
+    query.findObjectsInBackground { (objects: [PFObject]?, error: Error?) in
+        if let error = error {
+            // Log details of the failure
+            print(error.localizedDescription)
+        } else if let objects = objects {
+            // The find succeeded.
+            print("Successfully retrieved \(objects.count) scores.")
+            // Do something with the found objects
+            for object in objects {
+                print(object.objectId as Any)
+            }
+        }
+    }
+    
+    ```
+- [OPTIONAL: List endpoints if using existing API such as Yelp
+
+
+AN API of Spotify
+---
+-Base URL
+
+| HTTP Verb |    Endpoint   | Description     |
+| --------  | --------------| ----------------|
+|   Get     |   /artist     |Get Spotify catalog information for a single artist identified by their unique Spotify ID.| 
+|   Get     |   /playlist   |Get a playlist owned by a Spotify use.|
+|   Get     |  /Seach       |Get Spotify catalog information about albums, artists, playlists, tracks, shows or episodes that match a keyword string.|
+|   Get     |   /me | Get detailed profile information about the current user (including the current user's username).|
