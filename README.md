@@ -3,6 +3,8 @@ Original App Design Project - README
 
 # FEELINGSIFY
 
+Group Members: SangWon Park, Hannah Williams, Bryan Diaz, Caesar Cuzco 
+
 Spotify API:
 
 https://developer.spotify.com/documentation/web-api/reference/#/
