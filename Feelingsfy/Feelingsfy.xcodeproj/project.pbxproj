@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		8EB9BE582739B12800804312 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB9BE572739B12800804312 /* AppDelegate.swift */; };
 		8EB9BE5A2739B12800804312 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB9BE592739B12800804312 /* SceneDelegate.swift */; };
-		8EB9BE5C2739B12800804312 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB9BE5B2739B12800804312 /* ViewController.swift */; };
 		8EB9BE5F2739B12900804312 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB9BE5D2739B12900804312 /* Main.storyboard */; };
 		8EB9BE612739B12D00804312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EB9BE602739B12D00804312 /* Assets.xcassets */; };
 		8EB9BE642739B12D00804312 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB9BE622739B12D00804312 /* LaunchScreen.storyboard */; };
 		8EB9BE6F2739B12E00804312 /* FeelingsfyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB9BE6E2739B12E00804312 /* FeelingsfyTests.swift */; };
 		8EB9BE792739B12E00804312 /* FeelingsfyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB9BE782739B12E00804312 /* FeelingsfyUITests.swift */; };
 		8EB9BE7B2739B12E00804312 /* FeelingsfyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB9BE7A2739B12E00804312 /* FeelingsfyUITestsLaunchTests.swift */; };
+		A46009352741D6BE0011330D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46009342741D6BE0011330D /* LoginViewController.swift */; };
+		A46009372741D6D50011330D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46009362741D6D50011330D /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		8EB9BE542739B12800804312 /* Feelingsfy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Feelingsfy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB9BE572739B12800804312 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EB9BE592739B12800804312 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8EB9BE5B2739B12800804312 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8EB9BE5E2739B12900804312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8EB9BE602739B12D00804312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EB9BE632739B12D00804312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		8EB9BE742739B12E00804312 /* FeelingsfyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeelingsfyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB9BE782739B12E00804312 /* FeelingsfyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingsfyUITests.swift; sourceTree = "<group>"; };
 		8EB9BE7A2739B12E00804312 /* FeelingsfyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingsfyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A46009342741D6BE0011330D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A46009362741D6D50011330D /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +103,12 @@
 			children = (
 				8EB9BE572739B12800804312 /* AppDelegate.swift */,
 				8EB9BE592739B12800804312 /* SceneDelegate.swift */,
-				8EB9BE5B2739B12800804312 /* ViewController.swift */,
 				8EB9BE5D2739B12900804312 /* Main.storyboard */,
 				8EB9BE602739B12D00804312 /* Assets.xcassets */,
 				8EB9BE622739B12D00804312 /* LaunchScreen.storyboard */,
 				8EB9BE652739B12D00804312 /* Info.plist */,
+				A46009342741D6BE0011330D /* LoginViewController.swift */,
+				A46009362741D6D50011330D /* FeedViewController.swift */,
 			);
 			path = Feelingsfy;
 			sourceTree = "<group>";
@@ -258,8 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EB9BE5C2739B12800804312 /* ViewController.swift in Sources */,
+				A46009352741D6BE0011330D /* LoginViewController.swift in Sources */,
 				8EB9BE582739B12800804312 /* AppDelegate.swift in Sources */,
+				A46009372741D6D50011330D /* FeedViewController.swift in Sources */,
 				8EB9BE5A2739B12800804312 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

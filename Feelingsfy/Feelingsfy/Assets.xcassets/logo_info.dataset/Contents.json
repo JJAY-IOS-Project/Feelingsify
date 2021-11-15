@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "logo_info.txt",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
