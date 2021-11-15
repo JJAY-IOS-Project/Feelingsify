@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46895BA0B66E31EC9AEB0555 /* Pods_Feelingsfy_FeelingsfyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0DDA960D126BAE0B8E79C6 /* Pods_Feelingsfy_FeelingsfyUITests.framework */; };
 		8EB9BE582739B12800804312 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB9BE572739B12800804312 /* AppDelegate.swift */; };
 		8EB9BE5A2739B12800804312 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB9BE592739B12800804312 /* SceneDelegate.swift */; };
 		8EB9BE5F2739B12900804312 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB9BE5D2739B12900804312 /* Main.storyboard */; };
@@ -15,8 +16,11 @@
 		8EB9BE6F2739B12E00804312 /* FeelingsfyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB9BE6E2739B12E00804312 /* FeelingsfyTests.swift */; };
 		8EB9BE792739B12E00804312 /* FeelingsfyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB9BE782739B12E00804312 /* FeelingsfyUITests.swift */; };
 		8EB9BE7B2739B12E00804312 /* FeelingsfyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB9BE7A2739B12E00804312 /* FeelingsfyUITestsLaunchTests.swift */; };
+		9D82416CB753665C465F66E2 /* Pods_Feelingsfy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFD9DA2E9D858E5476B3567 /* Pods_Feelingsfy.framework */; };
+		A45BA65927420B6F00057CF7 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45BA65827420B6F00057CF7 /* SpotifyiOS.framework */; };
 		A46009352741D6BE0011330D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46009342741D6BE0011330D /* LoginViewController.swift */; };
 		A46009372741D6D50011330D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46009362741D6D50011330D /* FeedViewController.swift */; };
+		C65C76C527938DBE9FB76CCB /* Pods_FeelingsfyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB52CDA1995A9703377F137D /* Pods_FeelingsfyTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F0DDA960D126BAE0B8E79C6 /* Pods_Feelingsfy_FeelingsfyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Feelingsfy_FeelingsfyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11FD1F5C46D3481F3779B470 /* Pods-Feelingsfy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feelingsfy.release.xcconfig"; path = "Target Support Files/Pods-Feelingsfy/Pods-Feelingsfy.release.xcconfig"; sourceTree = "<group>"; };
+		271327BF3A631FDFD2D3BA0F /* Pods-FeelingsfyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeelingsfyTests.debug.xcconfig"; path = "Target Support Files/Pods-FeelingsfyTests/Pods-FeelingsfyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		786F519F3694667BA196C0B3 /* Pods-Feelingsfy-FeelingsfyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feelingsfy-FeelingsfyUITests.release.xcconfig"; path = "Target Support Files/Pods-Feelingsfy-FeelingsfyUITests/Pods-Feelingsfy-FeelingsfyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		89FDCE028F5E8272DA6CD93F /* Pods-FeelingsfyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeelingsfyTests.release.xcconfig"; path = "Target Support Files/Pods-FeelingsfyTests/Pods-FeelingsfyTests.release.xcconfig"; sourceTree = "<group>"; };
 		8EB9BE542739B12800804312 /* Feelingsfy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Feelingsfy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB9BE572739B12800804312 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EB9BE592739B12800804312 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,8 +58,13 @@
 		8EB9BE742739B12E00804312 /* FeelingsfyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeelingsfyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB9BE782739B12E00804312 /* FeelingsfyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingsfyUITests.swift; sourceTree = "<group>"; };
 		8EB9BE7A2739B12E00804312 /* FeelingsfyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingsfyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A45BA65827420B6F00057CF7 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
 		A46009342741D6BE0011330D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A46009362741D6D50011330D /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		A9FB7E955A460546B22894B4 /* Pods-Feelingsfy-FeelingsfyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feelingsfy-FeelingsfyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Feelingsfy-FeelingsfyUITests/Pods-Feelingsfy-FeelingsfyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB52CDA1995A9703377F137D /* Pods_FeelingsfyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeelingsfyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3A066306DA8CC6ADAE5B8F1 /* Pods-Feelingsfy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feelingsfy.debug.xcconfig"; path = "Target Support Files/Pods-Feelingsfy/Pods-Feelingsfy.debug.xcconfig"; sourceTree = "<group>"; };
+		EDFD9DA2E9D858E5476B3567 /* Pods_Feelingsfy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Feelingsfy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D82416CB753665C465F66E2 /* Pods_Feelingsfy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C65C76C527938DBE9FB76CCB /* Pods_FeelingsfyTests.framework in Frameworks */,
+				A45BA65927420B6F00057CF7 /* SpotifyiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +89,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46895BA0B66E31EC9AEB0555 /* Pods_Feelingsfy_FeelingsfyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EC1D4968F619B63D3BB591A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A45BA65827420B6F00057CF7 /* SpotifyiOS.framework */,
+				EDFD9DA2E9D858E5476B3567 /* Pods_Feelingsfy.framework */,
+				0F0DDA960D126BAE0B8E79C6 /* Pods_Feelingsfy_FeelingsfyUITests.framework */,
+				DB52CDA1995A9703377F137D /* Pods_FeelingsfyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D4219B1E49D90B627F08154 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3A066306DA8CC6ADAE5B8F1 /* Pods-Feelingsfy.debug.xcconfig */,
+				11FD1F5C46D3481F3779B470 /* Pods-Feelingsfy.release.xcconfig */,
+				A9FB7E955A460546B22894B4 /* Pods-Feelingsfy-FeelingsfyUITests.debug.xcconfig */,
+				786F519F3694667BA196C0B3 /* Pods-Feelingsfy-FeelingsfyUITests.release.xcconfig */,
+				271327BF3A631FDFD2D3BA0F /* Pods-FeelingsfyTests.debug.xcconfig */,
+				89FDCE028F5E8272DA6CD93F /* Pods-FeelingsfyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8EB9BE4B2739B12800804312 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +127,8 @@
 				8EB9BE6D2739B12E00804312 /* FeelingsfyTests */,
 				8EB9BE772739B12E00804312 /* FeelingsfyUITests */,
 				8EB9BE552739B12800804312 /* Products */,
+				5D4219B1E49D90B627F08154 /* Pods */,
+				0EC1D4968F619B63D3BB591A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EB9BE7E2739B12E00804312 /* Build configuration list for PBXNativeTarget "Feelingsfy" */;
 			buildPhases = (
+				3FA8B64B4FB14BD197EB5E5C /* [CP] Check Pods Manifest.lock */,
 				8EB9BE502739B12800804312 /* Sources */,
 				8EB9BE512739B12800804312 /* Frameworks */,
 				8EB9BE522739B12800804312 /* Resources */,
+				C2486912832DD03B163788B6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EB9BE812739B12E00804312 /* Build configuration list for PBXNativeTarget "FeelingsfyTests" */;
 			buildPhases = (
+				135160CB914760EE8B2BDD93 /* [CP] Check Pods Manifest.lock */,
 				8EB9BE662739B12E00804312 /* Sources */,
 				8EB9BE672739B12E00804312 /* Frameworks */,
 				8EB9BE682739B12E00804312 /* Resources */,
@@ -172,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EB9BE842739B12E00804312 /* Build configuration list for PBXNativeTarget "FeelingsfyUITests" */;
 			buildPhases = (
+				BB6AEDC7E3FAD83E5FD0163B /* [CP] Check Pods Manifest.lock */,
 				8EB9BE702739B12E00804312 /* Sources */,
 				8EB9BE712739B12E00804312 /* Frameworks */,
 				8EB9BE722739B12E00804312 /* Resources */,
+				4151731241621FAACE83C39E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,6 +304,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		135160CB914760EE8B2BDD93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FeelingsfyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FA8B64B4FB14BD197EB5E5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Feelingsfy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4151731241621FAACE83C39E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Feelingsfy-FeelingsfyUITests/Pods-Feelingsfy-FeelingsfyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Feelingsfy-FeelingsfyUITests/Pods-Feelingsfy-FeelingsfyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Feelingsfy-FeelingsfyUITests/Pods-Feelingsfy-FeelingsfyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB6AEDC7E3FAD83E5FD0163B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Feelingsfy-FeelingsfyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2486912832DD03B163788B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Feelingsfy/Pods-Feelingsfy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Feelingsfy/Pods-Feelingsfy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Feelingsfy/Pods-Feelingsfy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8EB9BE502739B12800804312 /* Sources */ = {
@@ -438,6 +590,7 @@
 		};
 		8EB9BE7F2739B12E00804312 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3A066306DA8CC6ADAE5B8F1 /* Pods-Feelingsfy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -465,6 +618,7 @@
 		};
 		8EB9BE802739B12E00804312 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11FD1F5C46D3481F3779B470 /* Pods-Feelingsfy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -492,11 +646,16 @@
 		};
 		8EB9BE822739B12E00804312 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 271327BF3A631FDFD2D3BA0F /* Pods-FeelingsfyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -516,11 +675,16 @@
 		};
 		8EB9BE832739B12E00804312 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89FDCE028F5E8272DA6CD93F /* Pods-FeelingsfyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -540,6 +704,7 @@
 		};
 		8EB9BE852739B12E00804312 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9FB7E955A460546B22894B4 /* Pods-Feelingsfy-FeelingsfyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -562,6 +727,7 @@
 		};
 		8EB9BE862739B12E00804312 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 786F519F3694667BA196C0B3 /* Pods-Feelingsfy-FeelingsfyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
