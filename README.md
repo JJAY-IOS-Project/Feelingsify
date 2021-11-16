@@ -240,4 +240,5 @@ AN API of Spotify
 |   Get     |   /me | Get detailed profile information about the current user (including the current user's username).|
 
 
-
+### GIFS
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/56744256/142083681-a0452c9c-d7d1-45d2-9163-0b2636672a01.gif)
