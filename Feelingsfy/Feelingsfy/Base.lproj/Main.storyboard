@@ -24,17 +24,26 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nz4-bm-M5l">
                                 <rect key="frame" x="40" y="462" width="334" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="NDF-Bj-eI7"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="752" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZtM-Fn-G3u">
                                 <rect key="frame" x="40" y="398" width="334" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="QyK-7H-RQu"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wyD-WS-Qfq">
                                 <rect key="frame" x="40" y="496" width="334" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="DNt-d2-mCA"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -85,7 +94,7 @@
                             <constraint firstItem="diw-Nf-m2K" firstAttribute="trailing" secondItem="ZtM-Fn-G3u" secondAttribute="trailing" constant="40" id="eVQ-FB-lW6"/>
                             <constraint firstItem="diw-Nf-m2K" firstAttribute="trailing" secondItem="wyD-WS-Qfq" secondAttribute="trailing" constant="40" id="ity-9I-fNz"/>
                             <constraint firstItem="ZtM-Fn-G3u" firstAttribute="leading" secondItem="diw-Nf-m2K" secondAttribute="leading" constant="40" id="o9C-ow-Yme"/>
-                            <constraint firstItem="BmL-eP-gzx" firstAttribute="top" secondItem="nnx-1Q-dmR" secondAttribute="bottom" constant="44" id="pKS-2C-2SY"/>
+                            <constraint firstItem="BmL-eP-gzx" firstAttribute="top" relation="lessThanOrEqual" secondItem="nnx-1Q-dmR" secondAttribute="bottom" constant="44" id="pKS-2C-2SY"/>
                             <constraint firstItem="diw-Nf-m2K" firstAttribute="trailing" secondItem="mjH-AX-pee" secondAttribute="trailing" constant="53" id="ptA-z8-0ZB"/>
                             <constraint firstItem="mQY-sf-DT0" firstAttribute="top" secondItem="wyD-WS-Qfq" secondAttribute="bottom" constant="74" id="t5t-Q1-Vuv"/>
                             <constraint firstItem="diw-Nf-m2K" firstAttribute="trailing" secondItem="Nz4-bm-M5l" secondAttribute="trailing" constant="40" id="ylG-wr-ufQ"/>
@@ -94,12 +103,30 @@
                     <connections>
                         <outlet property="passwordField" destination="wyD-WS-Qfq" id="lrz-zP-a83"/>
                         <outlet property="usernameField" destination="ZtM-Fn-G3u" id="C1m-iE-88X"/>
-                        <segue destination="OML-CL-fuS" kind="presentation" identifier="loginSegue" id="gYJ-L6-JM5"/>
+                        <segue destination="SVi-Vx-jKu" kind="presentation" identifier="loginSegue" id="yI3-Uu-AkP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KPg-Ey-csx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-596" y="-651"/>
+            <point key="canvasLocation" x="-1303" y="-757"/>
+        </scene>
+        <!--Spotify Login View Controller-->
+        <scene sceneID="TJf-Cd-EGo">
+            <objects>
+                <viewController id="SVi-Vx-jKu" customClass="SpotifyLoginViewController" customModule="Feelingsfy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lWr-2C-Elb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rUZ-Qq-U2V"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <segue destination="OML-CL-fuS" kind="presentation" identifier="loginSegue2" id="G4a-rD-p7o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ZW-n8-Bik" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-555.07246376811599" y="-735.32608695652175"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Iae-oF-awG">
@@ -125,7 +152,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="FeedViewController" customModule="Feelingsfy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -189,7 +216,7 @@
                     <tabBarItem key="tabBarItem" title="Profile" id="KnX-o6-mAK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3zk-mh-PaN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -249,7 +276,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="3hW-ww-3mt"/>
+        <segue reference="G4a-rD-p7o"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Feelingsify-logos" width="1200" height="1200"/>

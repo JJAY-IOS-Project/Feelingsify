@@ -7,6 +7,7 @@
 
 import UIKit
 import Parse
+import SpotifyLogin
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             $0.server = "https://parseapi.back4app.com"
         }
         Parse.initialize(with: parseConfig)
+        
+        
+        //spotify login
+        SpotifyLogin.shared.configure(clientID: "7d35be4475514aae9e9f9fdf6551f146", clientSecret: "066029dc26944ec595a9ee343b0c4c5d", redirectURL: URL(string: "Feelingsfy://confirm")!)
         
         
         return true

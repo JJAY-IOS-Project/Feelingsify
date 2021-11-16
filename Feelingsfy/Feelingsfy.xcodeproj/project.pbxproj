@@ -18,6 +18,8 @@
 		8EB9BE7B2739B12E00804312 /* FeelingsfyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB9BE7A2739B12E00804312 /* FeelingsfyUITestsLaunchTests.swift */; };
 		9D82416CB753665C465F66E2 /* Pods_Feelingsfy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFD9DA2E9D858E5476B3567 /* Pods_Feelingsfy.framework */; };
 		A45BA65927420B6F00057CF7 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45BA65827420B6F00057CF7 /* SpotifyiOS.framework */; };
+		A45C814927445EBD0038C6D0 /* SpotifyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45C814827445EBD0038C6D0 /* SpotifyLoginViewController.swift */; };
+		A45C814B27446A070038C6D0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45C814A27446A060038C6D0 /* Constants.swift */; };
 		A46009352741D6BE0011330D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46009342741D6BE0011330D /* LoginViewController.swift */; };
 		A46009372741D6D50011330D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46009362741D6D50011330D /* FeedViewController.swift */; };
 		C65C76C527938DBE9FB76CCB /* Pods_FeelingsfyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB52CDA1995A9703377F137D /* Pods_FeelingsfyTests.framework */; };
@@ -59,6 +61,8 @@
 		8EB9BE782739B12E00804312 /* FeelingsfyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingsfyUITests.swift; sourceTree = "<group>"; };
 		8EB9BE7A2739B12E00804312 /* FeelingsfyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingsfyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A45BA65827420B6F00057CF7 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
+		A45C814827445EBD0038C6D0 /* SpotifyLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyLoginViewController.swift; sourceTree = "<group>"; };
+		A45C814A27446A060038C6D0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A46009342741D6BE0011330D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A46009362741D6D50011330D /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		A9FB7E955A460546B22894B4 /* Pods-Feelingsfy-FeelingsfyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feelingsfy-FeelingsfyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Feelingsfy-FeelingsfyUITests/Pods-Feelingsfy-FeelingsfyUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +157,8 @@
 				8EB9BE652739B12D00804312 /* Info.plist */,
 				A46009342741D6BE0011330D /* LoginViewController.swift */,
 				A46009362741D6D50011330D /* FeedViewController.swift */,
+				A45C814827445EBD0038C6D0 /* SpotifyLoginViewController.swift */,
+				A45C814A27446A060038C6D0 /* Constants.swift */,
 			);
 			path = Feelingsfy;
 			sourceTree = "<group>";
@@ -413,10 +419,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A45C814927445EBD0038C6D0 /* SpotifyLoginViewController.swift in Sources */,
 				A46009352741D6BE0011330D /* LoginViewController.swift in Sources */,
 				8EB9BE582739B12800804312 /* AppDelegate.swift in Sources */,
 				A46009372741D6D50011330D /* FeedViewController.swift in Sources */,
 				8EB9BE5A2739B12800804312 /* SceneDelegate.swift in Sources */,
+				A45C814B27446A070038C6D0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
