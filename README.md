@@ -37,9 +37,9 @@ An app that uses Spotify API. The characteristic of Feelingfy is that it will ha
 
 **Required Must-have Stories**
 
-[X] Users can create an account
+- [X] Users can create an account
+- [X] Users can log in
 * Users see loading screen when app is opened
-[X] Users can log in
 * Users can log out
 * Users can remain logged in
 * Users can choose a mood
