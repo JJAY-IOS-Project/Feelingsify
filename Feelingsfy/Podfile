@@ -1,0 +1,26 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Feelingsfy' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  source 'https://github.com/CocoaPods/Specs.git'
+  pod 'SpotifyLogin', '~> 0.1'
+  pod 'Parse'
+  pod 'AlamofireImage'
+
+  
+  
+	
+  # Pods for Feelingsfy
+
+  target 'FeelingsfyTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'FeelingsfyUITests' do
+    # Pods for testing
+  end
+
+end

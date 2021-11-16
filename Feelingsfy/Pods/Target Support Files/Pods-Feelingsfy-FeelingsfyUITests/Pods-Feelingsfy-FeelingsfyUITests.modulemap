@@ -1,0 +1,6 @@
+framework module Pods_Feelingsfy_FeelingsfyUITests {
+  umbrella header "Pods-Feelingsfy-FeelingsfyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
