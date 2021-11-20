@@ -37,9 +37,10 @@ An app that uses Spotify API. The characteristic of Feelingfy is that it will ha
 
 **Required Must-have Stories**
 
-* Users can create an account
+- [X] Users can create an account
+- [X] Users can log in
 * Users see loading screen when app is opened
-* Users can log in and log out
+* Users can log out
 * Users can remain logged in
 * Users can choose a mood
 * Users can make a playlist
@@ -237,3 +238,7 @@ AN API of Spotify
 |   Get     |   /playlist   |Get a playlist owned by a Spotify use.|
 |   Get     |  /Seach       |Get Spotify catalog information about albums, artists, playlists, tracks, shows or episodes that match a keyword string.|
 |   Get     |   /me | Get detailed profile information about the current user (including the current user's username).|
+
+
+### GIFS
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/56744256/142083681-a0452c9c-d7d1-45d2-9163-0b2636672a01.gif)
