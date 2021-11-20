@@ -6,37 +6,38 @@
 //
 
 import UIKit
-import WebKit
+import Parse
 import SpotifyLogin
 
 class SpotifyLoginViewController: UIViewController {
 
-    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        let handled = SpotifyLogin.shared.applicationOpenURL(url) { (error) in }
-        return handled
-    }
+    var loginButton: UIButton?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // adds login button
-        let button = SpotifyLoginButton(viewController: self, scopes: [.streaming, .userLibraryRead])
-        button.translatesAutoresizingMaskIntoConstraints = false
+        let button = SpotifyLoginButton(viewController: self, scopes: [.streaming, .userReadTop, .playlistReadPrivate, .userLibraryRead])
         self.view.addSubview(button)
-        button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        button.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-
-        // Do any additional setup after loading the view.
-        SpotifyLogin.shared.getAccessToken { (accessToken, error) in
-            if error != nil {
-                // User is not logged in, show log in flow.
-                
-            }
-        }
-
-
+        self.loginButton = button
+        NotificationCenter.default.addObserver(self,
+                                                       selector: #selector(loginSuccessful),
+                                                       name: .SpotifyLoginSuccessful,
+                                                       object: nil)
     }
     
-    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        loginButton?.center = self.view.center
+    }
+
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+
+    @objc func loginSuccessful() {
+        self.navigationController?.popViewController(animated: true)
+        self.performSegue(withIdentifier: "loginSegue2", sender: self)
+    }
     
 }
