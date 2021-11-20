@@ -11,6 +11,11 @@ import SpotifyLogin
 
 class SpotifyLoginViewController: UIViewController {
 
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        let handled = SpotifyLogin.shared.applicationOpenURL(url) { (error) in }
+        return handled
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,6 +27,14 @@ class SpotifyLoginViewController: UIViewController {
         button.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
 
         // Do any additional setup after loading the view.
+        SpotifyLogin.shared.getAccessToken { (accessToken, error) in
+            if error != nil {
+                // User is not logged in, show log in flow.
+                
+            }
+        }
+
+
     }
     
     
