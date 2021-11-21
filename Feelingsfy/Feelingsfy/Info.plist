@@ -4,15 +4,12 @@
 <dict>
 	<key>CFBundleURLTypes</key>
 	<array>
+        <string>com.example.Feelingsfy</string>
 		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>com.example.Feelingsfy</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>Feelingsfy</string>
-			</array>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>Feelingsfy</string>
+            </array>
 		</dict>
 	</array>
 	<key>LSApplicationQueriesSchemes</key>

@@ -24,6 +24,8 @@ class SpotifyLoginViewController: UIViewController {
                                                        selector: #selector(loginSuccessful),
                                                        name: .SpotifyLoginSuccessful,
                                                        object: nil)
+        
+        self.performSegue(withIdentifier: "loginSegue2", sender: self)
     }
     
     override func viewWillLayoutSubviews() {
