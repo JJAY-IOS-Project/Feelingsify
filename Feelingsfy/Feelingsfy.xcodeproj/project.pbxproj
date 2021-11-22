@@ -17,7 +17,7 @@
 		8EB9BE792739B12E00804312 /* FeelingsfyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB9BE782739B12E00804312 /* FeelingsfyUITests.swift */; };
 		8EB9BE7B2739B12E00804312 /* FeelingsfyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB9BE7A2739B12E00804312 /* FeelingsfyUITestsLaunchTests.swift */; };
 		9D82416CB753665C465F66E2 /* Pods_Feelingsfy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFD9DA2E9D858E5476B3567 /* Pods_Feelingsfy.framework */; };
-		A45BA65927420B6F00057CF7 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45BA65827420B6F00057CF7 /* SpotifyiOS.framework */; };
+		A44CFCA6274B08CF00960B72 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44CFCA5274B08CE00960B72 /* SpotifyiOS.framework */; };
 		A45C814927445EBD0038C6D0 /* SpotifyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45C814827445EBD0038C6D0 /* SpotifyLoginViewController.swift */; };
 		A45C814B27446A070038C6D0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45C814A27446A060038C6D0 /* Constants.swift */; };
 		A46009352741D6BE0011330D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46009342741D6BE0011330D /* LoginViewController.swift */; };
@@ -60,7 +60,8 @@
 		8EB9BE742739B12E00804312 /* FeelingsfyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeelingsfyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB9BE782739B12E00804312 /* FeelingsfyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingsfyUITests.swift; sourceTree = "<group>"; };
 		8EB9BE7A2739B12E00804312 /* FeelingsfyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingsfyUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		A45BA65827420B6F00057CF7 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
+		A44CFCA4274B053F00960B72 /* Feelingsfy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Feelingsfy-Bridging-Header.h"; sourceTree = "<group>"; };
+		A44CFCA5274B08CE00960B72 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
 		A45C814827445EBD0038C6D0 /* SpotifyLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyLoginViewController.swift; sourceTree = "<group>"; };
 		A45C814A27446A060038C6D0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A46009342741D6BE0011330D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D82416CB753665C465F66E2 /* Pods_Feelingsfy.framework in Frameworks */,
+				A44CFCA6274B08CF00960B72 /* SpotifyiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +87,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C65C76C527938DBE9FB76CCB /* Pods_FeelingsfyTests.framework in Frameworks */,
-				A45BA65927420B6F00057CF7 /* SpotifyiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +104,7 @@
 		0EC1D4968F619B63D3BB591A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A45BA65827420B6F00057CF7 /* SpotifyiOS.framework */,
+				A44CFCA5274B08CE00960B72 /* SpotifyiOS.framework */,
 				EDFD9DA2E9D858E5476B3567 /* Pods_Feelingsfy.framework */,
 				0F0DDA960D126BAE0B8E79C6 /* Pods_Feelingsfy_FeelingsfyUITests.framework */,
 				DB52CDA1995A9703377F137D /* Pods_FeelingsfyTests.framework */,
@@ -159,6 +160,7 @@
 				A46009362741D6D50011330D /* FeedViewController.swift */,
 				A45C814827445EBD0038C6D0 /* SpotifyLoginViewController.swift */,
 				A45C814A27446A060038C6D0 /* Constants.swift */,
+				A44CFCA4274B053F00960B72 /* Feelingsfy-Bridging-Header.h */,
 			);
 			path = Feelingsfy;
 			sourceTree = "<group>";
@@ -604,6 +606,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Feelingsfy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -616,9 +622,46 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"AlamofireImage\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"Bolts\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"Parse\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SpotifyLogin\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-weak_framework",
+					"\"Accounts\"",
+					"-weak_framework",
+					"\"Social\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Feelingsfy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/sangy/Documents/GitHub/Feelingsify/Feelingsify/Feelingsfy/Feelingsfy/Feelingsfy-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -632,6 +675,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Feelingsfy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -644,9 +691,46 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"AlamofireImage\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"Bolts\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"Parse\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SpotifyLogin\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-weak_framework",
+					"\"Accounts\"",
+					"-weak_framework",
+					"\"Social\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Feelingsfy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/sangy/Documents/GitHub/Feelingsify/Feelingsify/Feelingsfy/Feelingsfy/Feelingsfy-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

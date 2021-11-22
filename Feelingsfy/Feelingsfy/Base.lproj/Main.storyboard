@@ -103,7 +103,7 @@
                     <connections>
                         <outlet property="passwordField" destination="wyD-WS-Qfq" id="lrz-zP-a83"/>
                         <outlet property="usernameField" destination="ZtM-Fn-G3u" id="C1m-iE-88X"/>
-                        <segue destination="SVi-Vx-jKu" kind="presentation" identifier="loginSegue" id="yI3-Uu-AkP"/>
+                        <segue destination="QeM-Od-e1u" kind="presentation" identifier="loginSegue" id="L1W-NV-n0G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KPg-Ey-csx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -111,22 +111,22 @@
             <point key="canvasLocation" x="-1303" y="-757"/>
         </scene>
         <!--Spotify Login View Controller-->
-        <scene sceneID="TJf-Cd-EGo">
+        <scene sceneID="VVi-xi-yby">
             <objects>
-                <viewController id="SVi-Vx-jKu" customClass="SpotifyLoginViewController" customModule="Feelingsfy" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lWr-2C-Elb">
+                <viewController id="QeM-Od-e1u" customClass="SpotifyLoginViewController" customModule="Feelingsfy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YOm-v2-aZO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="rUZ-Qq-U2V"/>
+                        <viewLayoutGuide key="safeArea" id="6Uh-EX-van"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <segue destination="OML-CL-fuS" kind="presentation" identifier="loginSegue2" id="G4a-rD-p7o"/>
+                        <segue destination="OML-CL-fuS" kind="presentation" identifier="loginSegue2" id="WtJ-ML-RZG"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4ZW-n8-Bik" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KQ7-l6-ijg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-555.07246376811599" y="-735.32608695652175"/>
+            <point key="canvasLocation" x="-600" y="-757"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Iae-oF-awG">
@@ -276,7 +276,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="G4a-rD-p7o"/>
+        <segue reference="WtJ-ML-RZG"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Feelingsify-logos" width="1200" height="1200"/>

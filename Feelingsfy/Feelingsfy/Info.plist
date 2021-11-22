@@ -4,7 +4,8 @@
 <dict>
 	<key>CFBundleURLTypes</key>
 	<array>
-        <string>com.example.Feelingsfy</string>
+        <key>CFBundleURLName</key>
+        <string>com.spotify.Feelingsfy</string>
 		<dict>
             <key>CFBundleURLSchemes</key>
             <array>
